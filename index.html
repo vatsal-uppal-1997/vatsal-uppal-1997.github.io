@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./views/styles/index.css">
+</head>
+
+<body>
+    <nav>
+        <section class="brand">
+            <h1>Bulletin.io</h1>
+        </section>
+    </nav>
+    <section class="main login">
+        <section class="login-form">
+            <form action="home.html">
+                <label for="username">Username</label>
+                <input type="text" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section class="register-login">
+            <a href="#" onclick="hideLogin()">Don't have an account ?</a>
+        </section>
+    </section>
+    <section class="main register">
+        <section class="login-form">
+            <form action="home.html">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" required>
+                <label for="username">Username</label>
+                <input type="text" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section class="register-login">
+            <a href="#" onclick="hideRegister()">Login ?</a>
+        </section>
+    </section>
+    <script>
+        function hideLogin() {
+            const login = document.querySelector(".login");
+            const register = document.querySelector(".register");
+            login.style.display = "none";
+            register.style.display = "flex";
+        }
+
+        function hideRegister() {
+            const login = document.querySelector(".login");
+            const register = document.querySelector(".register");
+            login.style.display = "flex";
+            register.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
