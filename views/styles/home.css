@@ -22,6 +22,10 @@ body {
     flex-direction: column;
 }
 
+.item {
+    position: relative;
+}
+
 .content .item {
     display: flex;
     flex-direction: column;
@@ -63,6 +67,16 @@ body {
 
 .beyondDeadline {
     background: #e84118;
+}
+
+.addItem {
+    margin: 5rem auto;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    font-size: 3rem;
+    color: #4b7bec;
+    cursor: pointer;
 }
 
 .completed {
